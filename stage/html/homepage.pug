@@ -1,0 +1,13 @@
+- var pagetitle = 'Homepage';
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title #{pagetitle}
+    include pug/layout/styles
+  body
+    .page.home-page
+      include pug/layout/sidebar
+      .content-area
+        h1 #{pagetitle} 
