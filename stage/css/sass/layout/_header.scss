@@ -1,19 +1,20 @@
 .header{
     background-color: #fff;
     padding: 20px;
+    .header-icon{
+        background-color: #f9f9f9;
+        color: #555;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-left: 10px;
+    }
     .toggle-sidebar{
         cursor: pointer;
     }
     .notifications-container{
         display: inline-block;
         margin-left: 20px;
-        .togglenotifications{
-            background-color: #f9f9f9;
-            color: #555;
-            padding: 10px;
-            border-radius: 50%;
-            cursor: pointer;
-        }
         .dropdown-menu{
             min-width: 600px;
             border: none;
@@ -48,6 +49,21 @@
                             border-radius: 50%;
                             text-align: center;
                             margin-right: 10px;
+                            &.fa-envelope{
+                                color: #fff;
+                            }
+                            &.fa-money-bill{
+                                color: rgb(110, 228, 110);
+                            }
+                            &.fa-thumbs-up{
+                                color: #00f;
+                            }
+                            &.fa-heart{
+                                color: #f00;
+                            }
+                            &.fa-share-from-square{
+                                color: #00f;
+                            }
                         }
                     }
                 }

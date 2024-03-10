@@ -1,7 +1,7 @@
 .header
   i.fa-solid.fa-right-left.toggle-sidebar
   .dropdown.notifications-container
-      i.fa-solid.fa-bell#notifications.togglenotifications(data-bs-toggle="dropdown", aria-expanded="false")
+      i.fa-solid.fa-bell#notifications.togglenotifications.header-icon(data-bs-toggle="dropdown", aria-expanded="false")
       .dropdown-menu(aria-labelledby="notifications")
        .noti-head
         |Notifications
@@ -24,4 +24,4 @@
           i.fa-solid.fa-share-from-square
           |Some One Shared Your Post
        .noti-foot.text-center: a(href="#") View All Notification
-       
+  i.fa-solid.fa-up-right-and-down-left-from-center.toggle-fullscreen.header-icon
