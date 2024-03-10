@@ -25,3 +25,34 @@
           |Some One Shared Your Post
        .noti-foot.text-center: a(href="#") View All Notification
   i.fa-solid.fa-up-right-and-down-left-from-center.toggle-fullscreen.header-icon
+  .dropdown.usermenu-container
+      .username#usermenu(data-bs-toggle="dropdown", aria-expanded="false")
+       img.avatar.rounded-circle(src="imgs/avatar.png", alt="User Avatar")
+       span.user Eng Ahmed
+       i.fa-solid.fa-angle-down
+      .dropdown-menu.dropdown-menu-right(aria-labelledby="usermenu")
+       .user-info
+        h3 Eng Ahmed
+        p premium member
+       hr
+       ul.activities-list.list-unstyled
+        li Added Coment on Posts "how are you"
+        li Created Post in category "science and medicine"
+        li Created Chart in charts page
+        li Added Coment on Posts "yes it is"
+       hr
+       .row.usermenu-links
+        .col
+         .link-box
+          i.fa-solid.fa-gear
+          span Settings
+        .col
+         .link-box
+          i.fa-solid.fa-user
+          span My Profile
+        .col
+         .link-box
+          i.fa-solid.fa-power-off
+          span Logout
+ 
+
