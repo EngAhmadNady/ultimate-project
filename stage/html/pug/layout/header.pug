@@ -1,2 +1,27 @@
 .header
   i.fa-solid.fa-right-left.toggle-sidebar
+  .dropdown.notifications-container
+      i.fa-solid.fa-bell#notifications.togglenotifications(data-bs-toggle="dropdown", aria-expanded="false")
+      .dropdown-menu(aria-labelledby="notifications")
+       .noti-head
+        |Notifications
+        span 50
+       .noti-content
+        ul.list-unstyled
+         li
+          i.fa-solid.fa-envelope
+          |Email From some Where Here
+         li
+          i.fa-solid.fa-money-bill
+          |You got Money From some Where Here
+         li
+          i.fa-solid.fa-thumbs-up
+          |Some One Liked Your Post
+         li
+          i.fa-solid.fa-heart
+          |Some One Loved Your Post
+         li
+          i.fa-solid.fa-share-from-square
+          |Some One Shared Your Post
+       .noti-foot.text-center: a(href="#") View All Notification
+       
