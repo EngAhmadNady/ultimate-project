@@ -14,10 +14,17 @@ $(function(){
         $(this).toggleClass("fullscreen");
         if($(this).hasClass("fullscreen")){
             openFullscreen();
-        }else{
-            closeFullscreen();
         }
+        else{
+            closeFullscreen();
+         }
+      });
 
+
+    //toggle settings
+    $(".toggle-settings").on("click",function(){
+      $(this).find("i").toggleClass("fa-spin");
+      $(this).parent().toggleClass("hide-settings");
     });
 });
 
