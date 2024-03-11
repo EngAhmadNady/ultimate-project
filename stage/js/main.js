@@ -41,6 +41,17 @@ $(function(){
       $(this).addClass("active").siblings().removeClass("active");
       $("body").removeClass(themeclasses.join(" ")).addClass($(this).data("theme"));
     });
+
+
+
+    //switch fonts
+    var fontclasses=[];
+    $(".font-options select option").each(function(){
+      fontclasses.push($(this).val());
+    });
+    $(".font-options select").on("change",function(){
+      $("body").removeClass(fontclasses.join(" ")).addClass($(this).find("option:selected").val());
+    });
 });
 
 
