@@ -22,10 +22,13 @@ $themes: (
     .page .pagehead .page-title {
       color: $color;
     }
-    .header .toggle-sidebar:hover {
+    .page .sidebar .links-area .child-links a:hover::before{
+      background-color: map-get($map, color);
+    }
+    .header .toggle-sidebar:hover{
       color: $color;
     }
-    .header .usermenu-container .dropdown-menu .user-info h3 {
+    .header .usermenu-container .dropdown-menu .user-info h3{
       color: $color;
     }
   }
