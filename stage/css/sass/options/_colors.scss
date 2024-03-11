@@ -19,7 +19,7 @@ $themes: (
 @each $theme, $map in $themes {
   .#{$theme} {
     $color: map-get($map, color);
-    .page .page-head .page-title {
+    .page .pagehead .page-title {
       color: $color;
     }
     .header .toggle-sidebar:hover {

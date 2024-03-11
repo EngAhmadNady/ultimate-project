@@ -26,6 +26,21 @@ $(function(){
       $(this).find("i").toggleClass("fa-spin");
       $(this).parent().toggleClass("hide-settings");
     });
+
+
+
+
+
+
+    //switch colors themes
+    var themeclasses=[];
+    $(".color-options li").each(function(){
+      themeclasses.push($(this).data("theme"));
+    });
+    $(".color-options li").on("click",function(){
+      $(this).addClass("active").siblings().removeClass("active");
+      $("body").removeClass(themeclasses.join(" ")).addClass($(this).data("theme"));
+    });
 });
 
 
